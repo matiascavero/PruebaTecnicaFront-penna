@@ -1,0 +1,37 @@
+.div-datos-get{
+    display: flex;
+    justify-content: space-evenly;
+    .div-datos-components{
+        margin: 2px 10px;
+    }
+}
+.div-datosUsers{
+    text-align: center;
+    
+    .datos{
+
+        .div-dato{
+            margin: 5px 5px;
+            border: solid 1px;
+            border-color: red;
+            width: 400px;
+            justify-items: center;
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                
+            }
+        }
+    }
+}
+
+.divv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid 2px;
+    border-color: red;
+    border-radius: 2px;
+    width: 400px;
+}

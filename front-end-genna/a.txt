@@ -1,0 +1,25 @@
+
+  const handleInputChange = (e) => {
+    const { name, files } = e.target;
+  
+    if (name === "path") {
+      // Manejar el archivo
+      const file = files[0];
+      const fileName = file ? file.name : ""; // Obtener el nombre del archivo
+  
+      // Usar FormData para manejar archivos
+      const formDataCopy = new FormData();
+      formDataCopy.append("path", file);
+  
+      setFormData({
+        ...formData,
+        path:  fileName,
+      });
+    } else {
+      // Manejar otros campos de texto
+      setFormData({
+        ...formData,
+        [name]: e.target.value,
+      });
+    }
+  };
