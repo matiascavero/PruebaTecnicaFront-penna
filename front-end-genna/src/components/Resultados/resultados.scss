@@ -33,5 +33,24 @@
     border: solid 2px;
     border-color: red;
     border-radius: 2px;
-    width: 400px;
+    width: 500px;
+    
+    .button{
+        width: 150px;
+        height: 30px;
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .object{
+        width: 200px;
+        height: auto;
+        overflow: hidden
+    }
+    .button:hover{
+        background-color: black;
+    }
 }
+
